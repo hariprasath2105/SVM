@@ -1,76 +1,57 @@
+# 🩺 Breast Cancer Prediction (SVM)
 
-# 🌸 Iris Flower Species Predictor (Naive Bayes + Flask)
-
-This is a simple Flask web application that uses a **Naive Bayes classifier** to predict the species of an Iris flower based on **only two inputs**: Petal Length and Petal Width.
+This is a simple web app that predicts whether a breast tumor is **benign** or **malignant** based on **two key features** from the **Breast Cancer Wisconsin dataset**.  
+It uses a **Support Vector Machine (SVM)** model trained with scikit-learn.
 
 ---
 
-## 🧠 Overview
+## 📊 Features Used
+- **Mean Radius** – Average size of tumor cells
+- **Mean Texture** – Variation in cell surface texture
 
-The app is built using:
-- **Python**
-- **Flask** (for the backend)
-- **HTML/CSS** (for a simple UI)
-- **scikit-learn** (for machine learning)
+---
 
-The model was trained on the classic **Iris dataset** using only the most informative features: `PetalLength` and `PetalWidth`.
+## 🧠 Tech Stack
+- **Python 3**
+- **Flask** (web backend)
+- **HTML/CSS** (frontend UI)
+- **scikit-learn** (machine learning)
+- **StandardScaler** (feature scaling)
 
 ---
 
 ## 📁 Project Structure
 
 ```
-iris-naivebayes-app/
+breast-cancer-svm-app/
 │
-├── model.py               # Trains and saves the model and label encoder
-├── iris.data              # Raw dataset
-├── model.pkl              # Trained Naive Bayes model
-├── label_encoder.pkl      # LabelEncoder to decode predictions
-├── app.py                 # Flask app
+├── train_model.py 
+├── model.pkl 
+├── scaler.pkl 
+├── app.py 
+│
 ├── templates/
-│   └── index.html         # Web interface
+│ └── index.html 
+│
 ├── static/
-│   └── style.css          # Gradient-styled UI
-└── README.md              # This file
+│ └── style.css 
+│
+└── README.md 
 ```
-
----
-
-## 🚀 How It Works
-
-1. User inputs:
-   - Petal Length (cm)
-   - Petal Width (cm)
-
-2. The Flask backend sends these to the pre-trained model (`model.pkl`)
-3. The model predicts one of:
-   - `Iris-setosa`
-   - `Iris-versicolor`
-   - `Iris-virginica`
-
-4. Result is shown on the webpage.
-
----
 
 ## 🔧 Installation
 
-### 1. Clone the Repository
-```bash
-git clone https://github.com/your-username/iris-naivebayes-app.git
-cd iris-naivebayes-app
-```
-
-### 2. Install Dependencies
+### 1. Install Dependencies
 ```bash
 pip install flask scikit-learn pandas numpy
 ```
 
-### 3. Train the Model (if not already)
+### 2. Train the Model (if not already)
 ```bash
 python model.py
 ```
 
-### 4. Run the Flask App
+### 3. Run the Flask App
 ```bash
 python app.py
 ```
@@ -82,13 +63,12 @@ Then visit: [http://localhost:5000](http://localhost:5000)
 ## 🖥️ Sample UI
 
 **Input**:
-- Petal Length: 4.5
-- Petal Width: 1.3
+
+<img width="663" height="587" alt="image" src="https://github.com/user-attachments/assets/58f3e7ac-e6f8-4393-b688-1801694ab30f" />
 
 **Output**:
-```
-Predicted Species: Iris-versicolor
-```
+
+<img width="663" height="587" alt="image" src="https://github.com/user-attachments/assets/444efd72-4e65-4def-817e-bf38959948d1" />
 
 ---
 
