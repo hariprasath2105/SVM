@@ -1,26 +1,32 @@
-# 🩺 Breast Cancer Prediction (SVM)
+# Breast Cancer Prediction (SVM)
 
 This is a simple web app that predicts whether a breast tumor is **benign** or **malignant** based on **two key features** from the **Breast Cancer Wisconsin dataset**.  
 It uses a **Support Vector Machine (SVM)** model trained with scikit-learn.
 
 ---
 
-## 📊 Features Used
+## Features Used
 - **Mean Radius** – Average size of tumor cells
 - **Mean Texture** – Variation in cell surface texture
 
 ---
 
-## 🧠 Tech Stack
+## Tech Stack
 - **Python 3**
-- **Flask** (web backend)
-- **HTML/CSS** (frontend UI)
-- **scikit-learn** (machine learning)
-- **StandardScaler** (feature scaling)
+- **Flask** 
+- **HTML/CSS** 
+- **scikit-learn** 
+- **StandardScaler**
+  
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
+![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 breast-cancer-svm-app/
@@ -39,7 +45,7 @@ breast-cancer-svm-app/
 └── README.md 
 ```
 
-## 🔧 Installation
+## Installation
 
 ### 1. Install Dependencies
 ```bash
@@ -60,7 +66,7 @@ Then visit: [http://localhost:5000](http://localhost:5000)
 
 ---
 
-## 🖥️ Sample UI
+## Sample UI
 
 **Input**:
 
@@ -71,14 +77,3 @@ Then visit: [http://localhost:5000](http://localhost:5000)
 <img width="663" height="587" alt="image" src="https://github.com/user-attachments/assets/444efd72-4e65-4def-817e-bf38959948d1" />
 
 ---
-
-## 🙋‍♂️ Author
-
-**Hari Prasath S**  
-[GitHub Profile](https://github.com/hariprasath2105)
-
----
-
-## 📘 License
-
-This project is open source and free to use.
